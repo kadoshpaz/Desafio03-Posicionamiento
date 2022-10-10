@@ -1,0 +1,198 @@
+/*ALUMNO: Daniel Paz Villaseca*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: rale_light;/*Por defecto que la página tenga tipo de letra Raleway Light (300)*/
+}
+
+/*Que cargue una fuente de manera local*/
+@font-face{/*Raleway Light (300)*/
+    font-family: rale_light; /*un alias al nombre de la fuente*/
+    src:url(/assets/fonts/raleway/Raleway-Light.ttf)/*Ubicación de la Fuente*/
+}
+
+/*Que cargue una fuente de manera local*/
+@font-face{/*Raleway Medium (500)*/
+    font-family: rale_medium; /*un alias al nombre de la fuente*/
+    src:url(/assets/fonts/raleway/Raleway-Medium.ttf)/*Ubicación de la Fuente*/
+}
+
+/*HEADER*/
+/*-------------------------------------------------------------------------------------------------------*/
+.header{
+    background-color: #000000; /*Color de fondo negro*/
+    color: white;/*Color de letra*/
+    height: 73px;/*Altura del header*/
+    display: flex;/*Disposición de los elementos*/
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1{
+    font-family: rale_medium;
+    font-size:50px;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*FOTO GIGANTE DE LA IGUANA*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*Primer artículo*/
+.iguana{
+    background-image: url(/assets/img/bg-header.jpg);
+    background-size: cover;  
+}
+
+.iguana img{
+    width: 100%;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Segundo artículo*/
+.elements{
+    background-color: #000000; /*Color de fondo negro*/
+    display: flex;/*Disposición de los elementos*/
+    flex-flow: row nowrap; /*que se muestre en fila*/
+    justify-content: center; /*contenido centrado horizontalmente*/
+    align-items: center;/*contenido centrado verticalmente*/
+    padding: 80px 40px 80px 40px; 
+    height: 348px; /*Altura del contenedor*/
+}
+
+.texto{
+    width: 40%;
+    display: flex;/*Disposición de los elementos*/
+    flex-flow: column nowrap;/*que se muestre en columnas*/
+    text-align: justify; /*texto justificado*/
+    color: white;/*color de texto*/
+    width: 475px;/*Ancho de la caja de texto*/
+    height: 197px;/*alto de la caja de texto*/
+    margin-right: 150px;/*Margen respecto de la imagen de la iguana*/
+}
+
+.texto p{
+    padding-left: 40px;
+}
+
+.imagen{
+    display: flex;/*Disposición de los elementos*/
+    align-items: center;/*contenido centrado verticalmente*/
+    justify-content: center;/*contenido centrado horizontalmente*/
+}
+.imagen img{
+    height: 237px;
+    width: 399px;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Tercer artículo*/
+.titulo{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1A13;
+    padding-top: 75px;
+}
+
+.titulo h1{
+    font-family: rale_medium;/*Tipo de letra*/
+    font-size:47px;/*Tamaño de la letra del Título*/
+}
+
+/*Caja contenedora de los iconos*/
+.iconos{
+    background-color: #1E1A13;
+    height: 226px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Caja de cada icono*/
+.icono{
+    background-color: #1E1A13;
+    height: 226px;
+    width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+/*Texto del icono*/
+.icono h3{
+    margin-top: 1rem;
+    font-size: 25px;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Cuarto artículo*/
+
+/*Caja que contiene las fotos de las tres iguanas*/
+.fotos{
+    background-color: #000000;
+    height: 348px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*div que contiene la foto de la iguana*/
+.box1{
+    width: 316px;/*ancho de la caja de la foto de la iguana*/
+    height: 202px;/*altura de la foto de la iguana*/
+    background-image: url(/assets/img/iguana-2.jpg);
+    background-repeat: no-repeat;/*que la imagen no se repita*/
+    background-size: cover;/*que cubra todo el div*/
+    background-position: center; /*que se centre*/
+    margin-right: 16px;
+}
+
+/*div que contiene la foto de la iguana*/
+.box2{
+    width: 316px;
+    height: 202px;
+    background-image: url(/assets/img/iguana-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 16px;
+}
+
+/*div que contiene la foto de la iguana*/
+.box3{
+    width: 316px;
+    height: 202px;
+    background-image: url(/assets/img/iguana-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 16px;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+.mi_footer{
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1A13;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.mi_footer a{
+    text-decoration: none; /*quito subrayado al link*/
+    color: #FFFFFF;/*color del link*/
+}
+
+.mi_footer a:hover{
+    color:aqua;/*cuando pinche sobre el link cambie de color*/
+}
+/*-------------------------------------------------------------------------------------------------------*/
